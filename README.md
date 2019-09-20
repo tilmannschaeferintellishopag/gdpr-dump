@@ -67,6 +67,9 @@ Where *formatterType* is one of the following
 * **text** - generates a paragraph
 * **uri** - generates a URI
 * **clear** - generates an empty string
+* **exact** - takes exact value from replacement file `{"columnName1: {"formatter":"exact","value":"XXX"}}`
+* **bcryptPassword** - generates a random password and crypt it with bcrypt method
+* **defaultPassword** - crypt default password with one of bcrypt (default), md5, plain algo: `{columnName1": {"formatter:"defaultPassword","default":"password", "algo":"md5"}}`
 
 This will replace the given column's value with Faker output.
 
